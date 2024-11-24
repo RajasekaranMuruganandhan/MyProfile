@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #profile {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        #profile-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        #profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        #profile-header div {
+            flex: 1;
+        }
+        #profile-header h1 {
+            margin: 0;
+            color: #333;
+        }
+        #profile-header p {
+            margin: 5px 0;
+            color: #777;
+        }
+        #skills, #social-links, #students-links {
+            padding: 5px;
+        }
+        #skills h2, #social-links, #students-links h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .skill-bar {
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .skill-bar span {
+            display: block;
+            height: 20px;
+            background: #4CAF50;
+        }
+        #social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+	#students-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body onload="myFunction1()">
+
+<header>
+    <h1>Welcome to My Profile</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div id="profile">
+    <div id="profile-header">
+        <!--<img src="https://MyProfile.com/Photo/MyPhoto.jpg" alt="My Photo">-->
+        <div>
+            <h1>R Muruganandhan, 9840611556</h1>
+	    <p>Rajasekaran.Muruganandhan@gmail.com</p>
+            <p>Team Lead / Full Stack Developer</p>
+            <p><strong>Location:</strong> Annur, Coimbatore</p>
+        </div>
+    </div>
+
+    <div id="skills">
+        <h2>Skills</h2>
+        <div class="skill-bar">
+            <span style="width: 90%;">' HTML/CSS, Javascript - 80%</span>
+        </div>
+        <div class="skill-bar">
+            <span style="width: 80%;">' ASP.net, MVC - 85%</span>
+        </div>
+	<div class="skill-bar">
+            <span style="width: 85%;">' SQL Server  - 85%</span>
+        </div>
+        <div class="skill-bar">
+            <span style="width: 35%;">' AI, Azure OPS, React, Node.js - 35%</span>
+        </div>
+    </div>
+
+    <div id="social-links">
+        <h2>Social Links</h2>
+        <a href="https://www.linkedin.com/in/Muruganandhan" target="_blank">LinkedIn</a>
+        <a href="https://github.com/RajasekaranMuruganandhan/MyProfile" target="_blank">GitHub</a>
+        <a href="mailto:Rajasekaran.Muruganandhan@gmail.com">Email</a>
+    </div>
+    <div id="students-links">
+        <h2>Students Links</h2>
+	<a href="https://chat.whatsapp.com/KLoEqeDc7bN39dTf5YXjfr">WhatsApp Study</a>
+	<a href="https://t.me/StudentsJobOnlineStudyFree">Telegram Study</a>
+    </div>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("social-links");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        //x.style.display = "none";
+	x.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
